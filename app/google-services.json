@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "20857934122",
+    "firebase_url": "https://ubroker-3041d.firebaseio.com",
+    "project_id": "ubroker-3041d",
+    "storage_bucket": "ubroker-3041d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20857934122:android:76334cb069bad3d4",
+        "android_client_info": {
+          "package_name": "com.ubroker.arquimo.ubroker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20857934122-qhu8ot484dq95dvjjj2jdbg63m741muo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ubroker.arquimo.ubroker",
+            "certificate_hash": "871d33fd8a168711097095ec37beea2c2226c6d5"
+          }
+        },
+        {
+          "client_id": "20857934122-c4qbogo44muc28mqm1o3b63ss986g3oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzLFB1XxCGUSDwBhwIsQbhl0r3ihAtXLI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20857934122-c4qbogo44muc28mqm1o3b63ss986g3oi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

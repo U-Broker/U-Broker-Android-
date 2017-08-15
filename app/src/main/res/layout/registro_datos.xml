@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro Datos"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="14dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etVerificarPass_RegistroDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Verificar Contraseña"
+        android:inputType="textWebPassword"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar_RegistroDatos"
+        app:layout_constraintRight_toRightOf="@+id/etContraseña_RegistroDatos"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintLeft_toLeftOf="@+id/etContraseña_RegistroDatos" />
+
+    <EditText
+        android:id="@+id/etContraseña_RegistroDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textWebPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/etVerificarPass_RegistroDatos"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="33dp" />
+
+    <EditText
+        android:id="@+id/etApellidos_RegistroDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellido(s)"
+        android:inputType="text"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo_RegistroDatos"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombres_RegistroDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre(s)"
+        android:inputType="text"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/etApellidos_RegistroDatos"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/etCorreo_RegistroDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Correo Electrónico"
+        android:inputType="textEmailAddress"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/etContraseña_RegistroDatos"
+        app:layout_constraintRight_toRightOf="@+id/etApellidos_RegistroDatos"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintLeft_toLeftOf="@+id/etApellidos_RegistroDatos" />
+
+    <Button
+        android:id="@+id/btnRegistrar_RegistroDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="29dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verifica y confirma tus datos"
+        android:textSize="18sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

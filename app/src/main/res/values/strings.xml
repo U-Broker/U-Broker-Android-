@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">U-Broker</string>
+    <string name="facebook_app_id">229793017512787</string>
+    <string name="fb_login_protocol_scheme">fb229793017512787</string>
+    <string name="text_boton_login_fb">Iniciar con Facebook</string>
+    <string name="cancel_login">Has cancelado el proceso</string>
+    <string name="error_login">Ha ocurrido un error: </string>
+    <string name="prompt_email">Correo Eléctronico</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar Sesión</string>
+    <string name="action_sign_in_short">Iniciar Sesión</string>
+    <string name="error_invalid_email">La dirección de correo es invalida</string>
+    <string name="error_invalid_password">La contraseña debe ser igual mayor a 6 caracteres.</string>
+    <string name="error_incorrect_password">La contraseña es incorrecta</string>
+    <string name="error_field_required">Campo requerido</string>
+    <string name="firebase_error_login">Fallo autenticación con Firebase</string>
+
+
+
+    <!-- STRINGS CON LAS URLS DEL WEBSERVICES-->
+    <string name="url_login">http://arquimo.com/ubroker/verificarUsuario.php</string>
+    <string name="url_registro">http://arquimo.com/ubroker/registro.php</string>
+    <string name="url_registro_cuenta">http://arquimo.com/ubroker/registroCuenta.php</string>
+    <string name="url_verificar_datos">http://arquimo.com/ubroker/verificarDatos.php</string>
+    <string name="url_consultar_productos">http://arquimo.com/ubroker/consultarProductos.php</string>
+    <string name="url_registro_nuevo_cliente">http://arquimo.com/ubroker/registroNuevoCliente.php</string>
+    <string name="url_consultar_clientes">http://arquimo.com/ubroker/consultarClientes.php</string>
+    <string name="url_ruta_img">http://arquimo.com/ubroker/img/</string>
+
+
+
+    <string name="action_settings">Opciones</string>
+    <string name="action_favorite">Favorito</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="salir">Cerrar Sesión</string>
+
+<!-- TOKEN FCM PARA NOTIFICACIONES-->
+    <string name="FCM_PREF">Token en Preferencias</string>
+    <string name="FCM_TOKEN">Sin token</string>
+    <string name="sin_notificaciones">No hay notificaciones</string>
+    <string name="firebase_error_crear_cuenta">Ha ocurrido un error al crear su cuenta</string>
+
+
+    <!-- PRODCUTOS CREDIX -->
+
+    <string-array name="productos_credix">
+        <item>CONSTRUCREDIX</item>
+        <item>INMOBICREDIX</item>
+        <item>LINEA DE FACTORAJE PARA PAGO A PROVEEDORES</item>
+        <item>LINEA DE CRÉDITO REVOLVENTE</item>
+        <item>CRÉDITO DE LÍNEA MIXTA</item>
+    </string-array>
+
+    <string-array name="cargando_productos">
+        <item>CARGANDO…</item>
+    </string-array>
+</resources>
+
+

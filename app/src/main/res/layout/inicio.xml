@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbBarra_Inicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivMiRed_Inicio"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:onClick="irMiRed"
+
+
+        style="@style/Widget.AppCompat.ImageButton"
+
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="true"
+
+
+        android:src="@drawable/mi_red"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ivMisClientes_Inicio"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivNuevoCliente_Inicio" />
+
+    <TextView
+        android:id="@+id/txtMisClientes_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mis Clientes"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="18dp"
+        app:layout_constraintRight_toRightOf="@+id/ivMisClientes_Inicio"
+        app:layout_constraintTop_toBottomOf="@+id/ivMisClientes_Inicio" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivMisClientes_Inicio"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:onClick="irMisClientes"
+
+        style="@style/Widget.AppCompat.ImageButton"
+
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="true"
+
+        android:src="@drawable/mis_clientes"
+        app:layout_constraintRight_toLeftOf="@+id/ivMiRed_Inicio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="73dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivProductos_Inicio" />
+
+    <TextView
+        android:id="@+id/txtBienvenida_Inicio"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+
+        android:text="¡Hola, "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/tbBarra_Inicio"
+        tools:layout_constraintLeft_creator="1" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        app:layout_constraintGuide_begin="45dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="45dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline4"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline5"
+        app:layout_constraintGuide_begin="56dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="56dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline6"
+        app:layout_constraintGuide_begin="96dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="96dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/txtMiRed_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi Red"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginStart="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivMiRed_Inicio"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/ivMiRed_Inicio" />
+
+    <TextView
+        android:id="@+id/txtProductos_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Productos"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/ivNuevoCliente_Inicio"
+        app:layout_constraintLeft_toRightOf="@+id/ivNuevoCliente_Inicio"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtNuevoCliente_Inicio"
+        app:layout_constraintTop_toTopOf="@+id/txtNuevoCliente_Inicio" />
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivProductos_Inicio"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:adjustViewBounds="true"
+
+        android:baselineAlignBottom="true"
+        android:cropToPadding="true"
+        android:onClick="irNuevoCliente"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:src="@drawable/nuevo_cliente"
+        app:layout_constraintBottom_toTopOf="@+id/txtNuevoCliente_Inicio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/ivNuevoCliente_Inicio"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/txtNuevoCliente_Inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Cliente"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/ivNuevoCliente_Inicio"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginTop="218dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/ivNuevoCliente_Inicio"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="75dp"
+
+
+
+        style="@style/Widget.AppCompat.ImageButton"
+
+        android:adjustViewBounds="true"
+        android:baselineAlignBottom="true"
+        android:cropToPadding="true"
+
+        android:onClick="irProductos"
+        android:src="@drawable/productos"
+        app:layout_constraintBottom_toTopOf="@+id/ivMisClientes_Inicio"
+        app:layout_constraintLeft_toRightOf="@+id/ivProductos_Inicio"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+</android.support.constraint.ConstraintLayout>

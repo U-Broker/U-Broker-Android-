@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    tools:context=".MisClientes">
+
+
+    <ProgressBar
+        android:id = "@+id/pbBarraProceso_MisClientes"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbBarra_MisClientes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        />
+
+
+
+    <ListView
+        android:id="@+id/mi_lista"
+        android:layout_width="match_parent"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:divider="@null"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tbBarra_MisClientes" />
+
+    <LinearLayout
+        android:id="@+id/noClientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+
+        <ImageView
+            android:id="@+id/noMessagesIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/clientes_mis_clientes"
+            android:tint="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/noMessagesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Aún no tienes clientes"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+    </LinearLayout>
+
+</RelativeLayout>

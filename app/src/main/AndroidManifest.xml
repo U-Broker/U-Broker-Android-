@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ubroker.arquimo.ubroker">
+
+
+    <!-- INICIO PERMISOS DE LA APLICACIÓN -->
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- FIN PERMISOS DE LA APLICACIÓN -->
+
+
+
+
+
+    <application
+        android:name=".UBrokerApp"
+        android:allowBackup="true"
+        android:icon="@drawable/u_broker_logo_azul"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+
+
+        <!-- INICIO SERVICIOS SOLICITADOS PARA NOTIFICACIONES FIREBASE -->
+        <service android:name=".NotificacionesServicio">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".TokenNotificaciones">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- FIN SERVICIOS SOLICITADOS PARA NOTIFICACIONES FIREBASE -->
+
+
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".Login"
+            android:exported="true">
+
+        </activity>
+
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- INICIO ACTIVITIES DE LA APLICACIÓN -->
+
+        <activity android:name=".NuevoCliente"></activity>
+        <activity android:name=".RegistroCuenta"></activity>
+        <activity android:name=".RegistroDatos"></activity>
+        <activity android:name=".Inicio" ></activity>
+        <activity android:name=".MisClientes" ></activity>
+        <activity android:name=".MiRed" ></activity>
+        <activity android:name=".Productos" ></activity>
+        <activity android:name=".VerNotificaciones" ></activity>
+        <activity android:name=".CuentaNoVerificada" ></activity>
+        <activity android:name=".Presentacion" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+
+
+
+
+        <!-- FIN ACTIVITIES DE LA APLICACIÓN -->
+
+    </application>
+
+</manifest>

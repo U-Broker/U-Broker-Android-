@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/llSeccion_MiRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <!-- android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft" -->
+
+        <ImageView
+            android:id="@+id/ivCliente_MiRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/clientes_mis_clientes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivCliente_MiRed"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/ivCliente_MiRed"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombreSeccion_MiRed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:text="[NOMBRE SECCIÓN]"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvInfoSeccion_MiRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvNombreSeccion_MiRed"
+                android:layout_alignParentLeft="true"
+                android:alpha="0.7"
+                android:text="[INFORMACIÓN DE LA SECCIÓN]"
+                android:textAlignment="viewStart"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivInfoCliente_MiRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:src="@drawable/descripcion_mis_clientes" />
+    </RelativeLayout>
+
+
+</LinearLayout>
